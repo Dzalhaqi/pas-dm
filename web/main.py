@@ -398,5 +398,7 @@ if indicator != 'All':
 
   st.markdown("### Model Performance")
 
-  st.code(f"RMSE: {Measures.rmse(df['actual'], df['forecast'])}")
-  st.code(f"MAPE: {Measures.mape(df['actual'], df['forecast'])}")
+  st.code(f" \
+          RMSE: {Measures.rmse(actual, prediction)} \
+          MAPE: {Measures.mape(actual, prediction)} \
+          ")
