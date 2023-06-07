@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from pyFTS.partitioners import Grid
 from pyFTS.models import chen
-
+from pyFTS.benchmarks import Measures
 from plotly.subplots import make_subplots
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -393,3 +393,10 @@ if indicator != 'All':
                       "<extra></extra>")
 
     st.plotly_chart(fig)
+
+# Model performance
+
+  st.markdown("### Model Performance")
+
+  st.code(f"RMSE: {Measures.rmse(df['actual'], df['forecast'])}")
+  st.code(f"MAPE: {Measures.mape(df['actual'], df['forecast'])}")
