@@ -1,6 +1,5 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/dzalhaqi/pa-mlops">
   <h3 align="center">Fuzzy Time Series Analysist Dashboard of Availability of Clean Water and Sanitation Around the World</h3>
 
   <p align="center">
